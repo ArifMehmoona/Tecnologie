@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porsche Models</title>
+</head>
+<body>
+
+  <h1>Porsche Models</h1>
+
+  <ul id="porscheList"></ul>
+
+  <script>
+    // Array di dati 
+    const porscheModels = [
+      {
+        "modello": "911 GT3 RS",
+        "colore": 2022,
+        "prezzo": "1, design sportivo",
+        "collezione": "HW: Sterrato"
+      },
+      {
+        "modello": "Taycan Turbo S Cross Turismo",
+        "colore": 2023,
+        "prezzo": "Veicolo elettrico ad alte prestazioni",
+        "collezione": "Veicolo elettrico ad alte prestazioni"
+      }
+    ];
+
+    function displayPorscheModels() {
+      const porscheListElement = document.getElementById("porscheList");
+
+      porscheModels.forEach(model => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
+        porscheListElement.appendChild(listItem);
+      });
+    }
+
+    // Chiama la funz
+    displayPorscheModels();
+  </script>
+
+</body>
+</html>
