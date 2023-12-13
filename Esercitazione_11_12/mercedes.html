@@ -1,1 +1,46 @@
-mercedes
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazda</title>
+</head>
+<body>
+
+  <h1>Mazda</h1>
+
+  <ul id="mazdaList"></ul>
+
+  <script>
+    // Array di dati 
+    const mazdaModels = [
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      },
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      }
+    ];
+
+    function displayMazdaModels() {
+      const mazdaListElement = document.getElementById("mazdaList");
+
+      mazdaodels.forEach(model => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
+        mazdaListElement.appendChild(listItem);
+      });
+    }
+
+    // Chiama la funz
+    displayMazdaModels();
+  </script>
+
+</body>
+</html>

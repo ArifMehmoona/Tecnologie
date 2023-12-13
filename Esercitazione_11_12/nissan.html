@@ -1,1 +1,46 @@
-nissan
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NISSAN</title>
+</head>
+<body>
+
+  <h1>NISSAN</h1>
+
+  <ul id="nissanList"></ul>
+
+  <script>
+    // Array di dati 
+    const nissanModels = [
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      },
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      }
+    ];
+
+    function displayNissanModels() {
+      const nissanListElement = document.getElementById("nissanList");
+
+      nissanodels.forEach(model => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
+        nissanListElement.appendChild(listItem);
+      });
+    }
+
+    // Chiama la funz
+    displayNissanModels();
+  </script>
+
+</body>
+</html>

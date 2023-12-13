@@ -1,1 +1,46 @@
-gmc
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GMC</title>
+</head>
+<body>
+
+  <h1>GMC</h1>
+
+  <ul id="gmcList"></ul>
+
+  <script>
+    // Array di dati 
+    const gmcModels = [
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      },
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      }
+    ];
+
+    function displayGmcModels() {
+      const gmcListElement = document.getElementById("gmcList");
+
+      gmcodels.forEach(model => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
+        gmcListElement.appendChild(listItem);
+      });
+    }
+
+    // Chiama la funz
+    displayGmcModels();
+  </script>
+
+</body>
+</html>

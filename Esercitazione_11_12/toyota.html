@@ -1,1 +1,46 @@
-toyota
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOYOTA</title>
+</head>
+<body>
+
+  <h1>TOYOTA</h1>
+
+  <ul id="toyotaList"></ul>
+
+  <script>
+    // Array di dati 
+    const toyotaModels = [
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      },
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      }
+    ];
+
+    function displayToyotaModels() {
+      const toyotaListElement = document.getElementById("toyotaList");
+
+      toyotaodels.forEach(model => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
+        toyotaListElement.appendChild(listItem);
+      });
+    }
+
+    // Chiama la funz
+    displayToyotaModels();
+  </script>
+
+</body>
+</html>

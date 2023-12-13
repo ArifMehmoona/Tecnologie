@@ -1,1 +1,46 @@
-dodge
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dodge</title>
+</head>
+<body>
+
+  <h1>Dodge</h1>
+
+  <ul id="dodgeList"></ul>
+
+  <script>
+    // Array di dati 
+    const dodgeModels = [
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      },
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      }
+    ];
+
+    function displayDodgeModels() {
+      const dodgeListElement = document.getElementById("dodgeList");
+
+      dodgeModels.forEach(model => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
+        dodgeListElement.appendChild(listItem);
+      });
+    }
+
+    // Chiama la funz
+    displayDodgeModels();
+  </script>
+
+</body>
+</html>

@@ -1,1 +1,46 @@
-ford
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ford</title>
+</head>
+<body>
+
+  <h1>Ford</h1>
+
+  <ul id="fordList"></ul>
+
+  <script>
+    // Array di dati 
+    const fordModels = [
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      },
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      }
+    ];
+
+    function displayFordModels() {
+      const fordListElement = document.getElementById("fordList");
+
+      fordModels.forEach(model => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
+        fordListElement.appendChild(listItem);
+      });
+    }
+
+    // Chiama la funz
+    displayFordModels();
+  </script>
+
+</body>
+</html>

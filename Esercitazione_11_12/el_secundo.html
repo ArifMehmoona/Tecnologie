@@ -1,1 +1,46 @@
-el secundo
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Secundo</title>
+</head>
+<body>
+
+  <h1>El Secundo</h1>
+
+  <ul id="elList"></ul>
+
+  <script>
+    // Array di dati 
+    const elModels = [
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      },
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      }
+    ];
+
+    function displayElModels() {
+      const elListElement = document.getElementById("elList");
+
+      elModels.forEach(model => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
+        elListElement.appendChild(listItem);
+      });
+    }
+
+    // Chiama la funz
+    displayElModels();
+  </script>
+
+</body>
+</html>

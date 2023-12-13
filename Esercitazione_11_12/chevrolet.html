@@ -1,1 +1,46 @@
-chevrolet
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chevrolet</title>
+</head>
+<body>
+
+  <h1>Chevrolet </h1>
+
+  <ul id="chevroletList"></ul>
+
+  <script>
+    // Array di dati 
+    const chevroletModels = [
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      },
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      }
+    ];
+
+    function displayChevroletModels() {
+      const chevroletListElement = document.getElementById("chevroletList");
+
+      chevroletModels.forEach(model => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
+        chevroletListElement.appendChild(listItem);
+      });
+    }
+
+    // Chiama la funz
+    displayChevroletModels();
+  </script>
+
+</body>
+</html>

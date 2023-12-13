@@ -1,1 +1,47 @@
-bmw
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW</title>
+</head>
+<body>
+
+  <h1>BWN</h1>
+
+  <ul id="bmwList"></ul>
+
+  <script>
+    // Array di dati 
+    const bmwModels = [
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      },
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      }
+    ];
+
+    function displayBmwModels() {
+      const bmwListElement = document.getElementById("bmwList");
+
+      bmwModels.forEach(model => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
+        bmwListElement.appendChild(listItem);
+      });
+    }
+
+    // Chiama la funz
+    displayBmwModels();
+  </script>
+
+</body>
+</html>
+

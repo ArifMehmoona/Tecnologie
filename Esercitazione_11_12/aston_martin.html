@@ -1,1 +1,46 @@
-aston martin
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aston Martin</title>
+</head>
+<body>
+
+  <h1>Aston Martin</h1>
+
+  <ul id="astonList"></ul>
+
+  <script>
+    // Array di dati 
+    const astonModels = [
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      },
+      {
+        "modello": "",
+        "colore": "",
+        "prezzo": "",
+        "collezione": ""
+      }
+    ];
+
+    function displayAstonModels() {
+      const astonListElement = document.getElementById("astonList");
+
+      astonModels.forEach(model => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
+        astonListElement.appendChild(listItem);
+      });
+    }
+
+    // Chiama la funz
+    displayAstonModels();
+  </script>
+
+</body>
+</html>
