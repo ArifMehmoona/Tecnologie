@@ -3,44 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GMC</title>
+  <title>Gmc</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
-  <h1>GMC</h1>
+  <div class="container mt-3">
+    <h1>GMC</h1>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Modello: 2024 Hummer EV</h5>
+        <p class="card-text">Colore: Grigio</p>
+        <p class="card-text">Collezione: HW Screen Time</p>
+        <p class="card-text">Prezzo: 2,50€</p>
+      </div>
+    </div>
+  </div>
 
-  <ul id="gmcList"></ul>
-
-  <script>
-    // Array di dati 
-    const gmcModels = [
-      {
-        "modello": "",
-        "colore": "",
-        "prezzo": "",
-        "collezione": ""
-      },
-      {
-        "modello": "",
-        "colore": "",
-        "prezzo": "",
-        "collezione": ""
-      }
-    ];
-
-    function displayGmcModels() {
-      const gmcListElement = document.getElementById("gmcList");
-
-      gmcodels.forEach(model => {
-        const listItem = document.createElement("li");
-        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
-        gmcListElement.appendChild(listItem);
-      });
-    }
-
-    // Chiama la funz
-    displayGmcModels();
-  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>

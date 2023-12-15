@@ -3,44 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Secundo</title>
+  <title>El_secundo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
-  <h1>El Secundo</h1>
+  <div class="container mt-3">
+    <h1>El Secundo</h1>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Modello: Coupe</h5>
+        <p class="card-text">Colore: Nero</p>
+        <p class="card-text">Collezione: HW Dream Garage</p>
+        <p class="card-text">Prezzo: 2,20€</p>
+      </div>
 
-  <ul id="elList"></ul>
+      <div class="card-body">
+        <h5 class="card-title">Modello: Coupe</h5>
+        <p class="card-text">Colore: Griogio</p>
+        <p class="card-text">Collezione: HW Dream Garage</p>
+        <p class="card-text">Prezzo: 1,79€</p>
 
-  <script>
-    // Array di dati 
-    const elModels = [
-      {
-        "modello": "",
-        "colore": "",
-        "prezzo": "",
-        "collezione": ""
-      },
-      {
-        "modello": "",
-        "colore": "",
-        "prezzo": "",
-        "collezione": ""
-      }
-    ];
+      </div>
 
-    function displayElModels() {
-      const elListElement = document.getElementById("elList");
+      <div class="card-body">
+        <h5 class="card-title">Modello: Coupe Clip</h5>
+        <p class="card-text">Colore: Blu</p>
+        <p class="card-text">Collezione: Experimotors</p>
+        <p class="card-text">Prezzo: 2,20€</p>
+      </div>
+    </div>
+  </div>
 
-      elModels.forEach(model => {
-        const listItem = document.createElement("li");
-        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
-        elListElement.appendChild(listItem);
-      });
-    }
-
-    // Chiama la funz
-    displayElModels();
-  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>

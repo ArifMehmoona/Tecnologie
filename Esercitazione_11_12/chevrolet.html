@@ -4,43 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chevrolet</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
-  <h1>Chevrolet </h1>
+  <div class="container mt-3">
+    <h1>Chevrolet </h1>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Modello: Corvette C7 Z06</h5>
+        <p class="card-text">Colore: Nero</p>
+        <p class="card-text">Collezione: Then And Now</p>
+        <p class="card-text">Prezzo: 2,99€</p>
+      </div>
 
-  <ul id="chevroletList"></ul>
+      <div class="card-body">
+        <h5 class="card-title">Modello: 1956 Corvette</h5>
+        <p class="card-text">Colore: Rosa</p>
+        <p class="card-text">Collezione: HW Screen Time</p>
+        <p class="card-text">Prezzo: 2,20€</p>
+      </div>
 
-  <script>
-    // Array di dati 
-    const chevroletModels = [
-      {
-        "modello": "",
-        "colore": "",
-        "prezzo": "",
-        "collezione": ""
-      },
-      {
-        "modello": "",
-        "colore": "",
-        "prezzo": "",
-        "collezione": ""
-      }
-    ];
+      <div class="card-body">
+        <h5 class="card-title">Modello: '62 Corvette</h5>
+        <p class="card-text">Colore: Nero</p>
+        <p class="card-text">CollezThen And Nowione: </p>
+        <p class="card-text">Prezzo: 2,99€</p>
+      </div>
 
-    function displayChevroletModels() {
-      const chevroletListElement = document.getElementById("chevroletList");
+      <div class="card-body">
+        <h5 class="card-title">Modello: </h5>
+        <p class="card-text">Colore: </p>
+        <p class="card-text">Collezione: </p>
+        <p class="card-text">Prezzo: </p>
+      </div>
 
-      chevroletModels.forEach(model => {
-        const listItem = document.createElement("li");
-        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
-        chevroletListElement.appendChild(listItem);
-      });
-    }
+    </div>
+  </div>
 
-    // Chiama la funz
-    displayChevroletModels();
-  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>

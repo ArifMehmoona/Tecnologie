@@ -4,43 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ford</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
-  <h1>Ford</h1>
+  <div class="container mt-3">
+    <h1>Ford</h1>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Modello: '87 Sierra Cosworth</h5>
+        <p class="card-text">Colore: Grigio</p>
+        <p class="card-text">Collezione: The 80's</p>
+        <p class="card-text">Prezzo: </p>
+      </div>
 
-  <ul id="fordList"></ul>
+      <div class="card-body">
+        <h5 class="card-title">Modello: Mustang Mach-E 1400</h5>
+        <p class="card-text">Colore: Blu</p>
+        <p class="card-text">Collezione: HW Drag Strip</p>
+        <p class="card-text">Prezzo: 2,20€</p>
+      </div>
 
-  <script>
-    // Array di dati 
-    const fordModels = [
-      {
-        "modello": "",
-        "colore": "",
-        "prezzo": "",
-        "collezione": ""
-      },
-      {
-        "modello": "",
-        "colore": "",
-        "prezzo": "",
-        "collezione": ""
-      }
-    ];
+    </div>
+  </div>
 
-    function displayFordModels() {
-      const fordListElement = document.getElementById("fordList");
-
-      fordModels.forEach(model => {
-        const listItem = document.createElement("li");
-        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
-        fordListElement.appendChild(listItem);
-      });
-    }
-
-    // Chiama la funz
-    displayFordModels();
-  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>

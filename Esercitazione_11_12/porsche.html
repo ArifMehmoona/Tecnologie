@@ -3,44 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Porsche Models</title>
+  <title>Porsche</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
-  <h1>Porsche Models</h1>
+  <div class="container mt-3">
+    <h1>Porsche</h1>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Modello: 911 Carrera RS 2.7</h5>
+        <p class="card-text">Colore: Arancione</p>
+        <p class="card-text">Collezione: Retro Racers</p>
+        <p class="card-text">Prezzo: 2,20€</p>
+      </div>
 
-  <ul id="porscheList"></ul>
+      <div class="card-body">
+        <h5 class="card-title">Modello: 911 GT3</h5>
+        <p class="card-text">Colore: Rosso</p>
+        <p class="card-text">Collezione: HW Exotics</p>
+        <p class="card-text">Prezzo: 2,20€</p>
+      </div>
 
-  <script>
-    // Array di dati 
-    const porscheModels = [
-      {
-        "modello": "911 GT3 RS",
-        "colore": 2022,
-        "prezzo": "1, design sportivo",
-        "collezione": "HW: Sterrato"
-      },
-      {
-        "modello": "Taycan Turbo S Cross Turismo",
-        "colore": 2023,
-        "prezzo": "Veicolo elettrico ad alte prestazioni",
-        "collezione": "Veicolo elettrico ad alte prestazioni"
-      }
-    ];
+      <div class="card-body">
+        <h5 class="card-title">Modello: '71 911</h5>
+        <p class="card-text">Colore: Bianco</p>
+        <p class="card-text">Collezione: Retro Racers</p>
+        <p class="card-text">Prezzo: 1,79€</p>
+      </div>
 
-    function displayPorscheModels() {
-      const porscheListElement = document.getElementById("porscheList");
+      <div class="card-body">
+        <h5 class="card-title">Modello: 911 Carrera RS 2.7</h5>
+        <p class="card-text">Colore: Bianco</p>
+        <p class="card-text">Collezione: Retro Racers</p>
+        <p class="card-text">Prezzo:1,79€ </p>
+      </div>
 
-      porscheModels.forEach(model => {
-        const listItem = document.createElement("li");
-        listItem.textContent = `${model.modello} | ${model.colore} | ${model.prezzo} | ${model.collezione}`;
-        porscheListElement.appendChild(listItem);
-      });
-    }
+      <div class="card-body">
+        <h5 class="card-title">Modello: 928s Safari</h5>
+        <p class="card-text">Colore: Grigio</p>
+        <p class="card-text">Collezione: Baja Blazers</p>
+        <p class="card-text">Prezzo: 2,99€</p>
+      </div>
 
-    // Chiama la funz
-    displayPorscheModels();
-  </script>
+      <div class="card-body">
+        <h5 class="card-title">Modello: 935</h5>
+        <p class="card-text">Colore: Blu</p>
+        <p class="card-text">Collezione: HW Exotics</p>
+        <p class="card-text">Prezzo: 2,99€</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
