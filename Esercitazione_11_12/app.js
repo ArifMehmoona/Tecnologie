@@ -1,7 +1,6 @@
-var express = require('express');
-var app=express();
-const path=require('path'); 
-app.use(express.static(path.join(__dirname, 'dist')));
+const express = require('express');
+const path = require('path');
+const app= express();
 
 app.get('/', function(req, res){
     res.sendFile(path.join(__dirname, 'index.html'));
@@ -57,7 +56,7 @@ app.get('/nissan', function(req, res){
 });
 
 app.get('/porsche', function(req, res){
-    res.sendFile(path.join(__dirname, '/porsche.html'));
+    res.sendFile(path.join(__dirname, 'porsche.html'));
 });
 
 app.get('/toyota', function(req, res){
@@ -65,11 +64,6 @@ app.get('/toyota', function(req, res){
 });
 
 
-
-
-app.get('/schedatecnica', function(req, res){
-    res.sendFile(path.join(__dirname, 'schedatecnica.html'));
-});
 
 
 
