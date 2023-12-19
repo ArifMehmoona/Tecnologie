@@ -1,1 +1,31 @@
-<li><a href="/alfa_romeo" [state]="alfa_romeo">Alfa</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOMEPAGE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm">
+    <li class="nav-link d-inline-block text-black" > MENU | </li>
+    <a class="nav-link" routerLink="/home-page" routerLinkActive="active-menu">Home page</a>
+    <a class="nav-link" routerLink="/alfa_romeo" routerLinkActive="active-menu" [state]="alfa_romeo">Alfa Romeo</a>
+    <a class="nav-link" routerLink="/aston_martin" routerLinkActive="active-menu" [state]="aston_martin">Aston Martin</a>
+    <a class="nav-link" routerLink="/bmw" routerLinkActive="active-menu" [state]="bmw">BMW</a>
+    <a class="nav-link" routerLink="/chevrolet" routerLinkActive="active-menu" [state]="chevrolet">Chevrolet</a>
+    <a class="nav-link" routerLink="/dodge" routerLinkActive="active-menu" [state]="dodge">Dodge</a>
+    <a class="nav-link" routerLink="/el_secundo" routerLinkActive="active-menu" [state]="el_secundo">El Secundo</a>
+    <a class="nav-link" routerLink="/ford" routerLinkActive="active-menu" [state]="ford">Ford</a>
+    <a class="nav-link" routerLink="/gmc" routerLinkActive="active-menu" [state]="gmc">GMC</a>
+    <a class="nav-link" routerLink="/mazda" routerLinkActive="active-menu" [state]="mazda">Mazda</a>
+    <a class="nav-link" routerLink="/mercedes" routerLinkActive="active-menu" [state]="mercedes">Mercedes</a>
+    <a class="nav-link" routerLink="/nissan" routerLinkActive="active-menu" [state]="nissan">Nissan</a>
+    <a class="nav-link" routerLink="/porsche" routerLinkActive="active-menu" [state]="porsche">Porsche</a>
+    <a class="nav-link" routerLink="/toyota" routerLinkActive="active-menu" [state]="toyota">Toyota</a>
+  </nav>
+  
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</body>

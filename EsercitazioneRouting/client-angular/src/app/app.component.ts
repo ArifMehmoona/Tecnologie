@@ -38,7 +38,7 @@ export class AppComponent implements OnInit{
       this.nissan = data['Nissan'];
       this.porsche = data['Porsche'];
       this.toyota = data['Toyota'];
-    });
-    }
+  });
   }
+}
 
