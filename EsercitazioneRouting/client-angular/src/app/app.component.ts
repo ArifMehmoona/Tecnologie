@@ -29,6 +29,7 @@ export class AppComponent implements OnInit{
     this.http.get('https://3000-arifmehmoona-tecnologie-jgynhg2ntnw.ws-eu107.gitpod.io/api').subscribe(data => {
       this.alfa_romeo = data['Alfa_romeo'];
       this.aston_martin = data['Aston_martin'];
+      this.bmw = data['Bmw'];
       this.chevrolet = data['Bmw'];
       this.dodge = data['Dodge'];
       this.el_secundo = data['El_secundo'];
