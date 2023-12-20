@@ -35,10 +35,10 @@ app.get('/api', (req, res) => {
 
         "Bmw":[
             {
-            "modello": "",
-            "colore":"",
-            "collezione":"",
-            "prezzo":"",
+            "modello": "i8 Roadster",
+            "colore":"Nero",
+            "collezione":"HW Roadsters",
+            "prezzo":"2,99€",
             "img":"https://a.allegroimg.com/original/11bfd9/55cb6904492f9415c4e249b417f8/HOT-WHEELS-MODEL-BMW-I8-ROADSTERS-HW-ROADSTERS"
             }
         ],
@@ -47,26 +47,26 @@ app.get('/api', (req, res) => {
 
         "Chevrolet":[
             {
-            "modello": "",
-            "colore":"",
-            "collezione":"",
-            "prezzo":"",
+            "modello": "Corvette C7 Z06",
+            "colore":"Nero",
+            "collezione":"Then And Now",
+            "prezzo":"2,99€",
             "img":"https://a.allegroimg.com/original/114c42/f08bc32d4f4ea26d508eb300fcab/Hot-Wheels-Corvette-C7-Z06-2023"
             },
 
             {
-            "modello": "",
-            "colore":"",
-            "collezione":"",
-            "prezzo":"",
+            "modello": "1956 Corvette",
+            "colore":"Rosa",
+            "collezione":"HW Screen Time",
+            "prezzo":"2,20€",
             "img":"https://a.allegroimg.com/s512/118d80/d3a0341741bfa46908d2808025fc/HOT-WHEELS-BARBIE-1956-CORVETTE-HW-SCREEN-TIME"
             },
 
             {
-            "modello": "",
-            "colore":"",
-            "collezione":"",
-            "prezzo":"",
+            "modello": "'62 Corvette",
+            "colore":"Nero",
+            "collezione":"Then And Now",
+            "prezzo":"2,99€",
             "img":"https://a.allegroimg.com/original/11842b/e04af70e4782abed1141bf043949/HOT-WHEELS-62-CORVETTE-HW-THEN-AND-NOW-2023"
             }
         ],
@@ -75,10 +75,10 @@ app.get('/api', (req, res) => {
 
         "Dodge":[
             {
-            "modello": "",
-            "colore":"",
-            "collezione":"",
-            "prezzo":"",
+            "modello": "'18 Challenger SRT Demon",
+            "colore":"Nero",
+            "collezione":"Muscle Mania",
+            "prezzo":"2,99€",
             "img":"https://a.allegroimg.com/original/113f43/664ecf3a4ef1a3387ddbd8a94ee5/HW-Hot-Wheels-18-Dodge-Challenger-SRT-Demon-2023"
             }
         ],

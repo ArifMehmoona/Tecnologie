@@ -1,1 +1,38 @@
-<p>el-secundo works!</p>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El_secundo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<div class="container mt-3" >
+    <h1 style="color: #2c4d90">El Secundo</h1>
+    <div class="card">
+      <div class="card-body" *ngFor="let es of el_secundo">
+        <h5 class="card-title"><b>Modello: {{es.modello}}</b></h5>
+        <p class="card-text">Colore: Nero</p>
+        <p class="card-text">Collezione: HW Dream Garage</p>
+        <p class="card-text">Prezzo: 2,20€</p>
+        <img src="https://a.allegroimg.com/original/110534/527c50fd4016acb7e0c4ddd1ab36/HOT-WHEELS-El-Segundo-Coupe-HKJ96-NOWY" width="250" length ="300" >
+      </div>
+
+      <div class="card-body" *ngFor="let es of el_secundo">
+        <h5 class="card-title"><b>Modello: {{es.modello}}</b></h5>
+        <p class="card-text">Colore: Grigio</p>
+        <p class="card-text">Collezione: HW Dream Garage</p>
+        <p class="card-text">Prezzo: 1,79€</p>
+        <img src="https://a.allegroimg.com/original/1195a7/b8e06c7a496cabfc96520869c3ec/EL-SEGUNDO-COUPE-autko-HOT-WHEELS-seria-2023" width="250" length ="300" ">
+      </div>
+
+      <div class="card-body" *ngFor="let es of el_secundo">
+        <h5 class="card-title"><b>Modello: {{es.modello}}</b></h5>
+        <p class="card-text">Colore: Blu</p>
+        <p class="card-text">Collezione: Experimotors</p>
+        <p class="card-text">Prezzo: 2,20€</p>
+        <img src="https://a.allegroimg.com/original/11d46a/b9d990d649988093eb717b53eeb5/HOT-WHEELS-COUPE-CLIP-HW-EXPERIMOTORS-2023" width="250" length ="300" ">
+      </div>
+    </div>
+  </div>
+
+

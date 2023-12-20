@@ -1,1 +1,22 @@
-<p>nissan works!</p>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nissan</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<div class="container mt-3" >
+    <h1 style="color: #0000ff">Nissan</h1>
+    <div class="card">
+      <div class="card-body" *ngFor="let n of nissan">
+        <h5 class="card-title"><b>Modello: {{n.modello}}</b></h5>
+        <p class="card-text">Colore: Bianco </p>
+        <p class="card-text">Collezione: HW Modified</p>
+        <p class="card-text">Prezzo: 2,20€</p>
+        <img src="https://a.allegroimg.com/s400/11ab7d/628089dd412ab5bcefa28c9ce4bf/HOT-WHEELS-Nissan-Leaf-Nismo-RC_02" width="250" length ="300" >
+      </div>
+    </div>
+  </div>
+
+

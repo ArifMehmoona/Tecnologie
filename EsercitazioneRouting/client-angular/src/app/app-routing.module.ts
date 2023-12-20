@@ -18,20 +18,20 @@ import { ToyotaComponent } from './toyota/toyota.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home-page', pathMatch: 'full'},
-  { path: 'home page', component: HomePageComponent},
-  { path: 'Alfa Romeo', component: AlfaRomeoComponent},
-  { path: 'Aston Martin', component: AstonMartinComponent},
-  { path: 'BMW', component: BmwComponent},
-  { path: 'Chevrolet', component: ChevroletComponent},
-  { path: 'Dodge', component: DodgeComponent},
-  { path: 'El Secundo', component: ElSecundoComponent},
-  { path: 'Ford', component: FordComponent},
-  { path: 'GMC', component: GmcComponent},
-  { path: 'Mazda', component: MazdaComponent},
-  { path: 'Mercedes', component: MercedesComponent},
-  { path: 'Nissan', component: NissanComponent},
-  { path: 'Porsche', component: PorscheComponent},
-  { path: 'Toyota', component: ToyotaComponent}
+  { path: 'home-page', component: HomePageComponent},
+  { path: 'alfa_romeo', component: AlfaRomeoComponent},
+  { path: 'aston-martin', component: AstonMartinComponent},
+  { path: 'bmw', component: BmwComponent},
+  { path: 'chevrolet', component: ChevroletComponent},
+  { path: 'dodge', component: DodgeComponent},
+  { path: 'el_secundo', component: ElSecundoComponent},
+  { path: 'ford', component: FordComponent},
+  { path: 'gmc', component: GmcComponent},
+  { path: 'mazda', component: MazdaComponent},
+  { path: 'mercedes', component: MercedesComponent},
+  { path: 'nissan', component: NissanComponent},
+  { path: 'porsche', component: PorscheComponent},
+  { path: 'toyota', component: ToyotaComponent}
 ];
 
 @NgModule({

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { Toyota } from 'models/model';
 
 @Component({
   selector: 'app-toyota',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./toyota.component.css']
 })
 export class ToyotaComponent {
+  toyota: Toyota[];
 
+  constructor(private router:Router){
+    this.toyota=this.router.getCurrentNavigation().extras.state as Toyota[];
+  }
 }

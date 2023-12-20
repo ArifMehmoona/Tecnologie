@@ -1,1 +1,40 @@
-<p>chevrolet works!</p>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chevrolet</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<div class="container mt-3" >
+    <h1 style="color: #FFD700">Chevrolet </h1>
+    <div class="card">
+      <div class="card-body" *ngFor="let c of chevrolet">
+        <h5 class="card-title"><b>Modello: {{c.modello}}</b></h5>
+        <p class="card-text">Colore: Nero</p>
+        <p class="card-text">Collezione: Then And Now</p>
+        <p class="card-text">Prezzo: 2,99€</p>
+        <img src="https://a.allegroimg.com/original/114c42/f08bc32d4f4ea26d508eb300fcab/Hot-Wheels-Corvette-C7-Z06-2023" width="250" length ="300" ">
+      </div>
+
+      <div class="card-body" *ngFor="let c of chevrolet">
+        <h5 class="card-title"><b>Modello: {{c.modello}}</b></h5>
+        <p class="card-text">Colore: Rosa</p>
+        <p class="card-text">Collezione: HW Screen Time</p>
+        <p class="card-text">Prezzo: 2,20€</p>
+        <img src="https://a.allegroimg.com/s512/118d80/d3a0341741bfa46908d2808025fc/HOT-WHEELS-BARBIE-1956-CORVETTE-HW-SCREEN-TIME" width="250" length ="300" ">
+
+      </div>
+
+      <div class="card-body" *ngFor="let c of chevrolet">
+        <h5 class="card-title"><b>Modello: {{c.modello}}</b></h5>
+        <p class="card-text">Colore: Nero</p>
+        <p class="card-text">Collezione: Then And Now: </p>
+        <p class="card-text">Prezzo: 2,99€</p>
+        <img src="https://a.allegroimg.com/original/11842b/e04af70e4782abed1141bf043949/HOT-WHEELS-62-CORVETTE-HW-THEN-AND-NOW-2023" width="250" length ="300" ">
+
+      </div>
+    </div>
+  </div>
+
+

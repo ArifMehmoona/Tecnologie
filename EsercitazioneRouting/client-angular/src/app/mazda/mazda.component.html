@@ -1,1 +1,22 @@
-<p>mazda works!</p>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazda</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<div class="container mt-3" >
+    <h1 style="color: #FF0000">Mazda</h1>
+    <div class="card">
+      <div class="card-body" *ngFor="let m of mazda">
+        <h5 class="card-title"><b>Modello: {{m.modello}}</b></h5>
+        <p class="card-text">Colore: Nero</p>
+        <p class="card-text">Collezione: The 80's</p>
+        <p class="card-text">Prezzo: 2,99€</p>
+        <img src="https://a.allegroimg.com/original/114a9e/dacf5e264e9791de14ba75b81515/HOT-WHEELS-MODEL-89-MAZDA-SAVANNA-RX-7-FC3S-HW" width="250" length ="300" >
+      </div>
+    </div>
+  </div>
+
+

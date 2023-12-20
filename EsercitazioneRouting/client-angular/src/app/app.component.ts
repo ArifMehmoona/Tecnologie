@@ -8,6 +8,7 @@ import { Alfa_romeo, Aston_martin, Bmw, Chevrolet, Dodge, El_secundo, Ford, Gmc,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
+  [x: string]: any;
   alfa_romeo: Alfa_romeo[];
   aston_martin: Aston_martin[];
   bmw: Bmw[];
