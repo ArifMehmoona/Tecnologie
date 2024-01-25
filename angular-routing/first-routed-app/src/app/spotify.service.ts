@@ -6,6 +6,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'  
 })
 export class SpotifyService {
+  searchArtist(query: string): import("rxjs").Observable<Object> {
+    throw new Error('Method not implemented.');
+  }
    //url per oauth: https://developer.spotify.com/console/get-search-item/
   //Ottengo il modulo HttpClient
   constructor(private http: HttpClient) { }
@@ -14,7 +17,7 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/search?q=${query}&type=track`;
     const headers = new HttpHeaders({
       Authorization:
-        'Bearer BQDRAOqWyM7L10feXaRKXdBoUBl9Bt9meHbgVAaUXnf-xtffDSbOvhb3mP1Tr12PBuH8b__sdDqRwQg8yiml5vXTS3USFngY6Wyr68iIDX0pnWI8e_A9VnbkBjV0_bbo3VKfNeCaE4xzVlykzzmubD-biyrIMgsNgZZx9mhe2Dbd6VzPLxN72QuiJITAilzBD0oP_8Ex8moRbZs'
+        'Bearer BQC8-N0BMaQLGfAiUk7X5BwSUgl4tBgeSl2PRNAZ4Q9p3iLgj-qTf3IRIM9SH-GLanyCojt_bEMHbfqe3jbZjTevUIRX1ECTIMybviKFt2cUUagtSqJFVhiV_k6jX-H1CBRtz9Vs5uDbQkkx0ct7J8d4HQ84toDWTBDz0jQVKLC3y1ewlJ4j2klFouHfzuj9_a8LLG0YVXiCXf0'
     });
 
     let obsTracks = this.http.get(url, { headers });
