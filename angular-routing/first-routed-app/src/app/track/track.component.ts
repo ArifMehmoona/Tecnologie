@@ -1,20 +1,17 @@
 import { Component } from '@angular/core';
-import { SpotifyService } from './spotify.service';
 import { Observable } from 'rxjs';
+import { SpotifyService } from '../spotify.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-track',
+  templateUrl: './track.component.html',
+  styleUrls: ['./track.component.css']
 })
-export class AppComponent {
+export class Track {
+  title = 'spotify-app';
   query: string;
-  title = 'first-routed-app';
   obsTrack: Observable<Object>;
-  obsArtist:Observable<Object>;
   results: any;
-s: any;
-  // faccio iniettare lo spotify service e faccio una ricerca
   constructor(public spotify: SpotifyService) {
    
   }
